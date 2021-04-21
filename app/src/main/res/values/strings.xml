@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ActivityExperiment</string>
+    <string name="back_btn">返回</string>
+    <string name="next_btn">下一页</string>
+    <string name="stack_btn">Activity栈</string>
+    <string name="stable_fragment_btn">静态fragment</string>
+    <string name="dynamic_fragment_btn">动态fragment</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/fragment_title"
+        android:name="com.example.activityexperiment.fragment.TitleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fl_contains"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <Button
+            android:text="按钮一"
+            android:id="@+id/btn_na1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:text="按钮二"
+            android:id="@+id/btn_na2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:text="按钮三"
+            android:id="@+id/btn_na3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:text="按钮四"
+            android:id="@+id/btn_na4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

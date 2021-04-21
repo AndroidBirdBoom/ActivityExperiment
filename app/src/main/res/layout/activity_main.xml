@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/next_btn" />
+
+    <Button
+        android:id="@+id/btn_stack"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/stack_btn"
+        app:layout_constraintBottom_toTopOf="@id/btn_next" />
+
+    <Button
+        android:id="@+id/btn_sfrgment"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/stable_fragment_btn"
+        app:layout_constraintBottom_toTopOf="@id/btn_stack" />
+
+    <Button
+        android:id="@+id/btn_dfrgment"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="@string/dynamic_fragment_btn"
+        app:layout_constraintBottom_toTopOf="@id/btn_sfrgment" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
