@@ -37,6 +37,14 @@
         android:text="@string/dynamic_fragment_btn"
         app:layout_constraintBottom_toTopOf="@id/btn_sfrgment" />
 
+    <Button
+        android:id="@+id/btn_intent"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="与其他应用交互"
+        app:layout_constraintBottom_toTopOf="@id/btn_dfrgment" />
+
     <TextView
         android:id="@+id/tv_show"
         android:layout_width="wrap_content"

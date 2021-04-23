@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LifecycleObserver;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final int CONTACT_REQUEST = 0;
     public static final String EDIT_TEXT_HINT_MESSAGE = "com.example.activityexperiment.edit.message";
 
-    private Button btn_next, btn_stack_next, btn_stablef, btn_dynamicf;
+    private Button btn_next, btn_stack_next, btn_stablef, btn_dynamicf, btn_intent;
     private TextView tv_show;
 
     @Override
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_stablef.setOnClickListener(this);
         btn_dynamicf = findViewById(R.id.btn_dfrgment);
         btn_dynamicf.setOnClickListener(this);
+        btn_intent = findViewById(R.id.btn_intent);
+        btn_intent.setOnClickListener(this);
         if (savedInstanceState != null) {
             onRestoreInstanceState(savedInstanceState);
         }
@@ -112,6 +115,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_dfrgment:
                 Intent intent3 = new Intent(this, DynamicfActivity.class);
                 startActivity(intent3);
+            case R.id.btn_intent:
+                /*Intent intent4 = new Intent(Intent.ACTION_VIEW);
+//                Intent chooser = Intent.createChooser(intent4, "title1");
+                try {
+                    startActivity(intent4);
+                } catch (ActivityNotFoundException e) {
+
+                }*/
+                Intent intent4 = new Intent();
+                intent4.setAction("com.view.my_action");
+                startActivity(intent4);
+                break;
             default:
                 break;
         }

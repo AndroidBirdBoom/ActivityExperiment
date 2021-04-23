@@ -18,7 +18,14 @@
         </activity>
 
 
-        <activity android:name=".activity.FirstActivity"></activity>
+        <activity
+            android:name=".activity.FirstActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.view.my_action" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.SingleTopAcitivty"
             android:launchMode="singleTop" />
