@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, FirstActivity.class);
                 intent.putExtra(EDIT_TEXT_HINT_MESSAGE, EDIT_TEXT_HINT_MESSAGE);
                 startActivityForResult(intent, CONTACT_REQUEST);
-
                 break;
             case R.id.btn_stack:
                 Intent intent1 = new Intent(this, SingleTopAcitivty.class);

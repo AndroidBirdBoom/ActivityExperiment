@@ -31,6 +31,7 @@
 
         <activity android:name=".activity.StablefActivity" />
         <activity android:name=".activity.DynamicfActivity" />
+        <activity android:name=".activity.ShareMessageActivity" />
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
