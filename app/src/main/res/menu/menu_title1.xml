@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_check"
+        android:title="check"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_click"
+        android:title="click"
+        app:showAsAction="always" />
+</menu>
